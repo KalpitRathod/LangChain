@@ -21,8 +21,6 @@ from langchain_community.document_loaders import UnstructuredPDFLoader
 DOC_PATH = "constitution_of_india.pdf"
 loader = UnstructuredPDFLoader(file_path=DOC_PATH)
 
-
-
 docs = loader.load()
 
 # Split
@@ -48,7 +46,6 @@ prompt = ChatPromptTemplate.from_template(template)
 
 local_model = "qwen3.5:4b"
 llm = ChatOllama(model=local_model)
-
 
 # Post-processing
 def format_docs(docs):

@@ -1,3 +1,5 @@
+# https://docs.langchain.com/oss/python/integrations/embeddings/ollama
+
 from langchain_ollama import OllamaEmbeddings
 
 # Documents
